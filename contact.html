@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- bootstrap-icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm position-fixed w-100 z">
+      <div class="container-sm">
+        <a class="navbar-brand text-danger fs-2 fw-bolder" href="#">News Switch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Open Sans', sans-serif; font-size: 13px;">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-success" aria-current href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto mx-2 text-success" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-2 text-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+                <li><a class="dropdown-item" href="#">Politics</a></li>
+                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto mx-2 text-success" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-end" role="search">
+            <input class="form-control me-2 border-1" type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn bg-danger rounded-5 text-white" type="submit">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section style="padding-top: 90px;">
+      <div class="container py-5">
+        <div class="text-center">
+          <h1 class="fw-semi-bold">CONTACT</h1>
+          <p>We're here to make it easy for you to connect with us. Our contact form is at your service share your thoughts,suggestions or any inquiries you may have.</p>
+        </div>
+        <div class="row justify-content-center" data-aos="zoom-in">
+          <div class="col-lg-7 mt-0 mt-lg-0 ">
+            <form action="" class=" border p-5 shadow rounded-3">
+              <div class="">
+                <div class="form-group">
+                  <label for="name" class="my-3 pe-5">Name</label>
+                  <input type="text" class="form-control w-100" placeholder="your name" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="name" class="my-3">Email</label>
+                  <input type="email" class="form-control w-100" placeholder="Email" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="">
+                <label for="name" class="my-3">Subject</label>
+                <input type="text" class="form-control w-100" placeholder="Title" name="subject" id="subject" required>
+              </div>
+              <div class="">
+                <label for="name" class="my-3">Message</label>
+                <textarea class="form-control message w-100 h-50" placeholder="Write a message" name="message" rows="10" required></textarea>
+              </div>
+              <div class="text-center mt-3"><button class="btn btn-success" type="submit">Send Message</button></div>
+            </form>
+          </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="pt-4">
+      <footer id="footer" class="bg-success text-light py-4">
+        <div class="news">
+          <h1 class="text-center fs-2 text-danger fw-bold">News SWITCH</h1>
+          <P class="text-center pb-5">The news you want, whenever you want it!</P>
+        </div>
+
+        <div class="container footer-bottom text-center py-2">
+          <div class="copyright">
+             Copyright &copy<span class="fw-bold">News Switch</span>. 2023 All Rights Reserved
+          </div>
+        </div>
+      </footer>
+    </section>
+
+        <!-- bootstrap-script -->
+        <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+    <!-- Aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>  

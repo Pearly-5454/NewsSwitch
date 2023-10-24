@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        <!-- AOS animation -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- bootstrap-icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <!-- styles -->
+        <link rel="stylesheet" href="style.css">
+        <!-- html -->
+        <link rel="stylesheet" href="about.html">
+        <link rel="stylesheet" href="contact.html">
+  </head>
+  <body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm position-fixed w-100 z">
+      <div class="container-sm">
+        <a class="navbar-brand text-danger fs-2 fw-bolder" href="#">News Switch</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-family: 'Open Sans', sans-serif; font-size: 13px;">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-success" aria-current href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto mx-2 text-success" href="about.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-2 text-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">News</a></li>
+                <li><a class="dropdown-item" href="#">Business</a></li>
+                <li><a class="dropdown-item" href="#">Politics</a></li>
+                <li><a class="dropdown-item" href="#">Entertainment</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link scrollto mx-2 text-success" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-end" role="search">
+            <input class="form-control me-2 border-1" type="search" placeholder="Search"  aria-label="Search">
+            <button class="btn bg-danger rounded-5 text-white" type="submit">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <main class="d-flex flex-column justify-content-center align-items-center pt-5 bg">
+      <div class="text-center pt-5 mb-5" data-aos="fade-down" data-aos-delay="100">
+        <h1 class="display-5 fw-bold text-danger">News Switch</h1>
+        <p class="text-white fs-6">The news you want, whenever you want it!</p>
+          <button class="btn bg-danger text-white rounded-5 px-3 py-2 mt-2" type="submit">Get started</button>
+      </div>
+
+      <!-- features -->
+      <div class="container text-center mt-5" data-aos="fade-right" data-aos-delay="300">
+        <div class="row gy-2">
+          <div class="col-md-6 col-lg-3 col-12">
+            <div class="card mx-auto shadow border-0 text-start card-zoom">
+              <div class="card-body position-relative">
+                <i class="bi bi-globe-europe-africa fs-2 text-success"></i>
+                <h5 class="card-title my-3 text-success">News</h5>
+                <p class="card-text">Stay up to date trending news, latest news, breaking news, exclusive interviews and much more here.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-12">
+            <div class="card mx-auto shadow border-0 text-start card-zoom">
+              <div class="card-body">
+                <i class="bi bi-currency-dollar fs-2 text-success"></i>
+                <h5 class="card-title my-3 text-success">Business</h5>
+                <p class="card-text">Keep up to date with the latest business news, best marketing practices, success stories and more.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-12">
+            <div class="card mx-auto shadow border-0 text-start card-zoom">
+              <div class="card-body">
+                <i class="bi bi-cookie fs-2 text-success"></i>
+                <h5 class="card-title my-3 text-success">Politics</h5>
+                <p class="card-text">We bring you the latest headlines, Opinions, Political news from Nigeria and the world.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 col-12">
+            <div class="card mx-auto shadow border-0 text-start card-zoom">
+              <div class="card-body">
+                <i class="bi bi-tv fs-2 text-success"></i>
+                <h5 class="card-title my-3 text-success">Entertainment</h5>
+                <p class="card-text">Get your daily dose of Entertainment, Events, lifestyle, Beauty and Inspiration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- call-to-action -->
+    <section id="cta" class="cta bg-dark py-5 mt-5">
+      <div class="container-cta px-5 py-4">
+        <div class="row">
+          <div class="col" data-aos="fade-down">
+            <h3 class="fw-semi-bold pt-5 text-white">Call To Action</h3>
+            <P class="text-white">Stay informed with our trusted news blog, your go-to source for breaking news, unbiased reporting, and in-depth analysis, we strive to deliever accurate and timely information on the topic that matter most to you. Stay informed, be engaged.</P>
+          </div>
+          <div class="col-lg-3 col-sm d-flex justify-content-center align-items-center" data-aos="zoom-in-left" data-aos-delay="300">
+            <a class="btn btn-danger rounded-3" href="">Call To Action</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="py-5">
+      <div class="py-3 container-sm">
+        <h4 class="text-center text-danger fw-bold">TESTIMONIALS</h4>
+        <P class="text-center">Our readers feedback drives us to continuously improve our news delivery. </P>
+      </div>
+      <div class="container-sm">
+        <div class="row gy-2">
+          <div class="col-lg-4">
+            <div class="card text-center border-0">
+              <div class="card-test rounded-3 text-center p-3 text-col">
+                <q>Discovering the latest news and insightful analysis has never been easier than with News Switch. Their well-researched articles and timely updates keep me informed and engaged.</q>
+              </div>
+            </div>
+            <div class="card-body text-center pt-3">
+              <img src="./image/test1.jpg" alt="" class="rounded-circle w-25 h-25">
+              <h5 class="pt-2">Sandra lois</h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center border-0">
+              <div class="card-test rounded-3 text-center p-3 text-col">
+                <q>News switch stands out for its comprehensive in-depth reporting and diverse perspectives, it is my trusted source for staying informed. A go-to source for staying in the know.</q>
+              </div>
+            </div>
+            <div class="card-body text-center pt-3">
+              <img src="./image/test2.jpg" alt="" class="rounded-circle w-25 h-25">
+              <h5 class="pt-2">Jasper ken</h5>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card text-center border-0">
+              <div class="card-test rounded-3 text-center p-3 text-col">
+                <q>In a crowded digital News landscape News Switch I appreciate their dedication to delivering the news without sensationalism, it's where i turn to for reliable information.</q>
+              </div>
+            </div>
+            <div class="card-body text-center pt-3">
+              <img src="./image/test3.jpg" alt="" class="rounded-circle w-25 h-25">
+              <h5 pt-2>Mike brown</h5>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    
+    <!-- About us -->
+    <section id="about-us-page" class="py-5 bg-white">
+      <div class="py-5 container-sm">
+        <h1 class=" fw-semi-bold text-center">ABOUT US</h1>
+        <p class="text-secondar text-center">News switch is an online news media targeted at Nigerians at home and in the Diasporato find crucial news and information they need.</p>
+          <div class="about-us-cotent row my-3 gy-3">
+            <div class="col-md-6 shadow">
+              <div class="card border-0">
+                <p>We bring you the most relevant and up-to-date stories, covering a wide range of topics and much more.</p>
+                <ul class="list-group border-0 ">
+                  <li class="list-group-item border-0 p-0">
+                    <span><i class="bi bi-check-all text-primary me-2"></i></span>
+                    <span>We provide our readers with accurate, unbiased and informative news that empowers them to make well informed decisions</span>
+                  </li>
+                  <li class="list-group-item border-0 p-0">
+                    <span><i class="bi bi-check-all text-primary"></i></span>
+                      <span>We adhere  to the highest ethical stadards in our reporting.</span>
+                  </li>
+                    <li class="list-group-item border-0 p-0">
+                      <span><i class="bi bi-check-all text-primary"></i></span>
+                      <span>We strive to be a trusted source of news you can rely on.</span>
+                    </li>
+                  </li>
+                </ul>  
+              </div>
+            </div>
+            <div class="col-md-6 shadow">
+              <p>we value your support and trust in us. if you  have any suggestios, feedback or stories you'd like us to cover, please feel free to reach out to us. Together we can stay informed and engaged with the ever evolving world around us.</p>
+              <button class="btn text-white bg-danger rounded-5 px-3">learn more</button>            
+            </div>
+          </div>
+      </div>
+
+    <!-- contact -->
+
+      <section>
+        <div class="container">
+          <div class="text-center">
+            <h1 class="fw-semi-bold">CONTACT</h1>
+            <p>We're here to make it easy for you to connect with us. Our contact form is at your service share your thoughts,suggestions or any inquiries you may have.</p>
+          </div>
+          <div class="row justify-content-center" data-aos="zoom-in">
+            <div class="col-lg-7 mt-0 mt-lg-0 ">
+              <form action="" class="">
+                <div class="">
+                  <div class="form-group">
+                    <label for="name" class="my-3 pe-5">Name</label>
+                    <input type="text" class="form-control w-100" placeholder="your name" id="name" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="name" class="my-3">Email</label>
+                    <input type="email" class="form-control w-100" placeholder="Email" name="email" id="email" required>
+                  </div>
+                </div>
+                <div class="">
+                  <label for="name" class="my-3">Subject</label>
+                  <input type="text" class="form-control w-100" placeholder="Title" name="subject" id="subject" required>
+                </div>
+                <div class="">
+                  <label for="name" class="my-3">Message</label>
+                  <textarea class="form-control message w-100 h-50" placeholder="Write a message" name="message" rows="10" required></textarea>
+                </div>
+                <div class="text-center mt-3"><button class="btn btn-success " type="submit">Send Message</button></div>
+              </form>
+            </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <section class="pt-5">
+        <footer id="footer" class="bg-success text-light py-4">
+          <div class="news">
+            <h1 class="text-center fs-2 text-danger fw-bold">News SWITCH</h1>
+            <P class="text-center pb-5">The news you want, whenever you want it!</P>
+          </div>
+  
+          <div class="container footer-bottom text-center py-2">
+            <div class="copyright">
+               Copyright &copy<span class="fw-bold">News Switch</span>. 2023 All Rights Reserved
+            </div>
+          </div>
+        </footer>
+      </section>
+        
+        <!-- bootstrap-script -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
+    <!-- Aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
